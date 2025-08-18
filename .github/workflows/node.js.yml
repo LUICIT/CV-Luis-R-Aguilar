@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Angular
         run: |
-          npx ng build --configuration production --base-href "/dist/cv_luis/"
+          npx ng build --configuration production --base-href "/CV-Luis-R-Aguilar/"
           # Si tu salida es dist/cv_luis/browser, ajusta el directorio en el paso de deploy
 
       - name: Add 404 fallback for SPA
