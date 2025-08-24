@@ -1,0 +1,159 @@
+{
+  "pageConfig": {
+    "background": "assets/img/video/video1.mp4"
+  },
+  "generalInfo": {
+    "shortName": "Luis R. Aguilar",
+    "fullName": "Luis Rodrigo Aguilar Uribe",
+    "email": "falcon_nike3@hotmail.com",
+    "shortDescription": "Hola, soy Luis Rodrigo Aguilar Uribe, un desarrollador de software con más de 8 años de trayectoria en el diseño e implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java, Spring Boot, Laravel y VueJS, aplicando metodologías ágiles y buenas prácticas de ingeniería.",
+    "description": "Hola, soy Luis R. Aguilar, un desarrollador de software con más de 8 años de trayectoria en el diseño e implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java, Spring Boot, Laravel y VueJS, aplicando metodologías ágiles y buenas prácticas de ingeniería. Mi último puesto como Analista Programador SR B me permitió fortalecer mis habilidades en la construcción de sistemas complejos y el trabajo colaborativo con equipos multidisciplinarios. Me apasiona la tecnología, seguir aprendiendo cada día y aportar valor en equipos que buscan innovación y crecimiento. Estoy abierto a nuevos retos donde pueda compartir mi experiencia y al mismo tiempo seguir creciendo como profesional.",
+    "socials": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/Luis.R.Aguilar.Uribe"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/isc-luis-rodrigo-aguilar-uribe/"
+      }
+    ],
+    "assets": {
+      "profile": {
+        "image": "assets/img/all-images/luis/IMG_0302.JPG"
+      },
+      "cv": {
+        "url": "assets/files/luis/cv_2025.pdf",
+        "fileName": "CV_Luis_Aguilar.pdf"
+      }
+    }
+  },
+  "sections": {
+    "home": {
+      "title": "Hola, soy Luis R. Aguilar, desarrollador de software",
+      "subtitle": {
+        "part1": "Innovación Tecnológica",
+        "part2": "y desarrollo de",
+        "part3": "software"
+      },
+      "description": "Creando software que combina innovación, eficiencia y valor real, transformando ideas en soluciones tecnológicas que generan impacto, mejoran procesos y ofrecen experiencias más simples y efectivas."
+    },
+    "aboutMe": {
+      "title": "Sobre mí",
+      "subtitle": {
+        "part1": "Creando experiencias",
+        "part2": "de usuario",
+        "part3": "fluidas"
+      },
+      "review": {
+        "title": "Luis R. Aguilar Uribe",
+        "description": "Hola, soy Luis Rodrigo Aguilar Uribe, un desarrollador de software con más de 8 años de trayectoria en el diseño e implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java, Spring Boot, Laravel y VueJS, aplicando metodologías ágiles y buenas prácticas de ingeniería. Mi último puesto como Analista Programador SR B me permitió fortalecer mis habilidades en la construcción de sistemas complejos y el trabajo colaborativo con equipos multidisciplinarios. Me apasiona la tecnología, seguir aprendiendo cada día y aportar valor en equipos que buscan innovación y crecimiento. Estoy abierto a nuevos retos donde pueda compartir mi experiencia y al mismo tiempo seguir creciendo como profesional."
+      },
+      "principals": [
+        {
+          "icon": "assets/img/icons/home2.svg",
+          "title": "Angular",
+          "description": "Desarrollo de aplicaciones web dinámicas y escalables, con énfasis en el rendimiento, la mantenibilidad y experiencias de usuario modernas."
+        },
+        {
+          "icon": "assets/img/icons/home3.svg",
+          "title": "Java, Spring Boot",
+          "description": "Creación de aplicaciones robustas y seguras con arquitectura escalable, optimizando procesos mediante servicios backend eficientes y confiables."
+        },
+        {
+          "icon": "assets/img/icons/home4.svg",
+          "title": "Git, Control de Versiones",
+          "description": "Gestión eficiente del código a través de control de versiones, facilitando el trabajo en equipo, la trazabilidad y el desarrollo colaborativo."
+        },
+        {
+          "icon": "assets/img/icons/home5.svg",
+          "title": "SCRUM",
+          "description": "Aplicación de metodologías ágiles para gestionar proyectos de software, fomentando la colaboración, la adaptabilidad y la entrega continua de valor."
+        }
+      ],
+      "workExperience": [
+        {
+          "period": "Jul 2022 - Ago 2025",
+          "url": "https://www.banregio.com/",
+          "positionTitle": "Analista Programador SR B",
+          "companySchool": "Grupo Financiero Banregio"
+        },
+        {
+          "period": "Jul 2022 - Feb 2023",
+          "positionTitle": "Desarrollador Full Stack",
+          "companySchool": "Horuss Solutions"
+        },
+        {
+          "period": "Oct 2021 - Feb 2022",
+          "positionTitle": "Desarrollador Full Stack",
+          "companySchool": "Horuss Solutions"
+        },
+        {
+          "period": "Feb 2019 - Sep 2021",
+          "positionTitle": "Jefe de Departamento",
+          "url": "https://www.municipiocampeche.gob.mx/",
+          "companySchool": "H. Ayuntamiento de Campeche"
+        },
+        {
+          "period": "Mar 2018 - Dic 2018",
+          "positionTitle": "Desarrollador de Software",
+          "companySchool": "Logismic Software"
+        }
+      ],
+      "educations": [
+        {
+          "period": "Sep 2025 - Actualidad",
+          "positionTitle": "Maestría en Tecnologías de la Información",
+          "url": "https://ieu.edu.mx/oferta-academica/maestrias/tecnologias-de-la-informacion/",
+          "companySchool": "IEU Universidad"
+        },
+        {
+          "period": "Ago 2011 - Dic 2016",
+          "positionTitle": "Ingeniería en Sistemas Computacionales",
+            "url": "https://itcampeche.edu.mx/ingenieria-en-sistemas-computacionales/",
+          "companySchool": "Instituto Tecnológico de Campeche"
+        }
+      ]
+    },
+    "mySkills": {
+      "title": "Mis Habilidades",
+      "subtitle": {
+        "part1": "Las herramientas detrás de un",
+        "part2": "desarrollo",
+        "part3": "excepcional"
+      },
+      "toolsTechnologies": [
+        {
+          "icon": "assets/img/icons/skill1.svg",
+          "name": "Angular",
+          "percentage": 96
+        },
+        {
+          "icon": "assets/img/icons/skill2.svg",
+          "name": "Java",
+          "percentage": 92
+        },
+        {
+          "icon": "assets/img/icons/skill3.svg",
+          "name": "Spring Boot",
+          "percentage": 90
+        },
+        {
+          "icon": "assets/img/icons/skill4.svg",
+          "name": "Laravel",
+          "percentage": 80
+        },
+        {
+          "icon": "assets/img/icons/skill5.svg",
+          "name": "Git",
+          "percentage": 98
+        },
+        {
+          "icon": "assets/img/icons/skill6.svg",
+          "name": "PostgreSQL",
+          "percentage": 90
+        }
+      ]
+    }
+  }
+}
