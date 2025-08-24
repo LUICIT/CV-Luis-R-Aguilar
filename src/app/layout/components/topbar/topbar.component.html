@@ -34,7 +34,8 @@
             <div class="space32"></div>
             <div class="space16"></div>
             <div class="btn-area">
-                <a href="mailto:falcon_nike3@hotmail.com" class="vl-btn1">Contactame
+                <a [href]="'mailto:' + data.generalInfo.email" class="vl-btn1">
+                    Contactame
                     <img src="assets/img/icons/mail1.svg" alt="">
                 </a>
             </div>
@@ -43,10 +44,10 @@
                 <h3 class="sidebar-heading">Social Links</h3>
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/Luis.R.Aguilar.Uribe">
+                        <a [href]="data.generalInfo.socials[0].url">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/isc-luis-rodrigo-aguilar-uribe/">
+                        <a [href]="data.generalInfo.socials[1].url">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </li>
@@ -67,15 +68,16 @@
                         <div class="btn-area d-lg-flex">
                             <div class="theme-toggle-container">
                                 <label class="theme-switch">
-                                    <input type="checkbox" type="checkbox" [checked]="isLightMode" (change)="toggleTheme($event)"
-                                           id="theme-toggle" id="theme-toggle">
+                                    <input type="checkbox" [checked]="isLightMode" (change)="toggleTheme($event)"
+                                           id="theme-toggle">
                                     <span class="slider">
                                         <i class="fas fa-moon icon moon-icon"></i>
                                         <i class="fas fa-sun icon sun-icon"></i>
                                     </span>
                                 </label>
                             </div>
-                            <a href="mailto:falcon_nike3@hotmail.com" class="vl-btn1">Contactame
+                            <a [href]="'mailto:' + data.generalInfo.email" class="vl-btn1">
+                                Contactame
                                 <span>
                                     <img src="assets/img/icons/mail1.svg" alt="">
                                 </span>

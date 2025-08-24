@@ -4,8 +4,10 @@ import { GsapRevealDirective } from '../../../directives/gsap-reveal.directive';
 import { CommonModule } from '@angular/common';
 import { ClassManagerService } from '../../../services/classmanaer.service';
 import { ScrollToModule, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
-import aos from 'aos';
 import { CounterDirective } from '../../../directives/counter.directive';
+import * as data from '../../../../../public/assets/data/information.json';
+import { InformationModel } from '../../../../../public/assets/data/Information.model';
+import { SafeUrlPipe } from '../../../pipes/safe-url.pipe';
 
 @Component({
     selector: 'app-sidebar',
@@ -15,33 +17,28 @@ import { CounterDirective } from '../../../directives/counter.directive';
         CommonModule,
         RouterOutlet,
         ScrollToModule,
+        SafeUrlPipe,
     ],
     templateUrl: './sidebar.component.html',
     styles: ``,
     providers: [ScrollToService],
 })
 export class SidebarComponent {
+
     currentSection = 'list-item-1';
     year = new Date().getFullYear();
-    isModelOpen: boolean = false;
     sectionIds = [
         'list-item-1',
         'list-item-2',
         'list-item-3',
     ];
 
+    readonly data: InformationModel = data;
+
     constructor(
-        private renderer: Renderer2,
+        private readonly renderer: Renderer2,
         public classManager: ClassManagerService
     ) {
-    }
-
-    ngOnInit() {
-        aos.init();
-    }
-
-    openModel() {
-        this.isModelOpen = true;
     }
 
     @HostListener('window:scroll', [])
@@ -60,10 +57,6 @@ export class SidebarComponent {
                 }
             }
         }
-    }
-
-    closeModel() {
-        this.isModelOpen = false;
     }
 
     setActiveLink(sectionId: string): void {

@@ -25,35 +25,35 @@
                         </a>
                     </div>
                     <div class="img1 image-anime reveal" appGsapReveal>
-                        <img src="assets/img/all-images/luis/IMG_0302.JPG" alt="">
+                        <img [src]="data.generalInfo.assets.profile.image" alt="">
                     </div>
                     <div class="space18"></div>
-                    <h3>Luis R. Aguilar Uribe</h3>
+                    <h3>{{ data.generalInfo.shortName }}</h3>
                     <div class="space16"></div>
-                    <p>Hola, soy Luis R. Aguilar, un desarrollador de software con más de 8 años de trayectoria en el diseño e
-                        implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java, Spring Boot, Laravel y VueJS,
-                        aplicando metodologías ágiles y buenas prácticas de ingeniería.</p>
+                    <p>
+                        {{ data.generalInfo.shortDescription }}
+                    </p>
                     <div class="space32"></div>
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/Luis.R.Aguilar.Uribe">
+                            <a [href]="data.generalInfo.socials[0].url">
                                 <img src="assets/img/icons/s-icon3.svg" alt="">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/isc-luis-rodrigo-aguilar-uribe/">
+                            <a [href]="data.generalInfo.socials[1].url">
                                 <img src="assets/img/icons/s-icon4.svg" alt="">
                             </a>
                         </li>
                     </ul>
                     <div class="space44"></div>
                     <div class="btn-area1 text-center">
-                        <a href="assets/files/luis/cv_2025.pdf" download class="vl-btn1">Descargar CV
+                        <a [href]="data.generalInfo.assets.cv.url" download class="vl-btn1">Descargar CV
                             <img src="assets/img/icons/download1.svg" alt="">
                         </a>
                     </div>
                     <div class="space32"></div>
-                    <p>© {{ year }} Luis R. Aguilar. All Rights Reserved.</p>
+                    <p>© {{ year }} {{ data.generalInfo.shortName }}. All Rights Reserved.</p>
                 </div>
             </div>
             <div class="col-lg-8">
@@ -64,18 +64,18 @@
                         <div class="hero-heading-area heading1">
                             <h5 data-aos="fade-left" data-aos-duration="800">
                                 <img src="assets/img/icons/sublogo1.svg" alt="">
-                                Hola, soy Luis R. Aguilar, desarrollador de software
+                                {{ data.sections.home.title }}
                             </h5>
                             <div class="space24"></div>
-                            <h1 data-aos="fade-left" data-aos-duration="900">Innovación tecnológica</h1>
+                            <h1 data-aos="fade-left" data-aos-duration="900">{{ data.sections.home.subtitle.part1 }}</h1>
                             <div class="space24"></div>
-                            <h1 class="head" data-aos="fade-left" data-aos-duration="1000">y desarrollo de
-                                <span>software</span>
+                            <h1 class="head" data-aos="fade-left" data-aos-duration="1000">
+                                {{ data.sections.home.subtitle.part2 }} <span>{{ data.sections.home.subtitle.part3 }}</span>
                             </h1>
                             <div class="space24"></div>
-                            <p data-aos="fade-left" data-aos-duration="1100">Creando software que combina innovación, eficiencia y valor
-                                real, transformando ideas en soluciones tecnológicas que generan impacto, mejoran procesos y ofrecen
-                                experiencias más simples y efectivas.</p>
+                            <p data-aos="fade-left" data-aos-duration="1100">
+                                {{ data.sections.home.description }}
+                            </p>
                             <div class="space32"></div>
                         </div>
                     </div>
@@ -86,14 +86,16 @@
                         <div class="about-section-area">
                             <div class="heading1">
                                 <h5 data-aos="fade-left" data-aos-duration="800"><img
-                                    src="assets/img/icons/sublogo1.svg" alt="">Sobre mí</h5>
+                                    src="assets/img/icons/sublogo1.svg" alt="">
+                                    {{ data.sections.aboutMe.title }}
+                                </h5>
                                 <div class="space24"></div>
                                 <h1 data-aos="fade-left" data-aos-duration="1000">
-                                    Creando experiencias
+                                    {{ data.sections.aboutMe.subtitle.part1 }}
                                 </h1>
                                 <div class="space24"></div>
                                 <h1 class="head" data-aos="fade-left" data-aos-duration="1100">
-                                    de usuario <span>fluidas</span>
+                                    {{ data.sections.aboutMe.subtitle.part2 }} <span>{{ data.sections.aboutMe.subtitle.part3 }}</span>
                                 </h1>
                             </div>
                             <div class="space60"></div>
@@ -101,118 +103,46 @@
                                 <div class="row">
                                     <div class="col-lg-12" data-aos="fade-left" data-aos-duration="1200">
                                         <div class="about-main-boxes">
-                                            <h4>Luis R. Aguilar</h4>
+                                            <h4>{{ data.sections.aboutMe.review.title }}</h4>
                                             <div class="space24"></div>
                                             <p>
-                                                Hola, soy Luis R. Aguilar, un desarrollador de software con más de 8 años de trayectoria en
-                                                el diseño e implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java,
-                                                Spring Boot, Laravel y VueJS, aplicando metodologías ágiles y buenas prácticas de
-                                                ingeniería. Mi último puesto como Analista Programador SR B me permitió fortalecer mis
-                                                habilidades en la construcción de sistemas complejos y el trabajo colaborativo con equipos
-                                                multidisciplinarios. Me apasiona la tecnología, seguir aprendiendo cada día y aportar valor
-                                                en equipos que buscan innovación y crecimiento. Estoy abierto a nuevos retos donde pueda
-                                                compartir mi experiencia y al mismo tiempo seguir creciendo como profesional.
+                                                {{ data.sections.aboutMe.review.description }}
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="900">
-                                        <div class="about-boxes2">
-                                            <img src="assets/img/icons/home2.svg" alt="">
-                                            <div class="content-area">
-                                                <h4>Angular</h4>
-                                                <div class="space16"></div>
-                                                <p>
-                                                    Desarrollo de aplicaciones web dinámicas y escalables, con énfasis en el rendimiento, la
-                                                    mantenibilidad y experiencias de usuario modernas.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
                                     
-                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="about-boxes2">
-                                            <img src="assets/img/icons/home3.svg" alt="">
-                                            <div class="content-area">
-                                                <h4>Java, Spring Boot</h4>
-                                                <div class="space16"></div>
-                                                <p>
-                                                    Creación de aplicaciones robustas y seguras con arquitectura escalable, optimizando
-                                                    procesos mediante servicios backend eficientes y confiables.
-                                                </p>
-                                            </div>
+                                    @for (principal of data.sections.aboutMe.principals; track principal.title) {
+                                        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="900">
+                                                <div class="about-boxes2">
+                                                    <img [src]="principal.icon" alt="">
+                                                    <div class="content-area">
+                                                        <h4>{{ principal.title }}</h4>
+                                                        <div class="space16"></div>
+                                                        <p>
+                                                            {{ principal.description }}
+                                                        </p>
+                                                    </div>
+                                                </div>
                                         </div>
-                                    </div>
+                                    }
                                     
-                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1100">
-                                        <div class="about-boxes2">
-                                            <img src="assets/img/icons/home4.svg" alt="">
-                                            <div class="content-area">
-                                                <h4>Git, Control de Versiones</h4>
-                                                <div class="space16"></div>
-                                                <p>
-                                                    Gestión eficiente del código a través de control de versiones, facilitando el trabajo en
-                                                    equipo, la trazabilidad y el desarrollo colaborativo.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200">
-                                        <div class="about-boxes2">
-                                            <img src="assets/img/icons/home5.svg" alt="">
-                                            <div class="content-area">
-                                                <h4>SCRUM</h4>
-                                                <div class="space16"></div>
-                                                <p>
-                                                    Aplicación de metodologías ágiles para gestionar proyectos de software, fomentando la
-                                                    colaboración, la adaptabilidad y la entrega continua de valor.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="soace20"></div>
+                                    
                                     <div class="col-lg-6 col-md-6">
                                         <h3>Experiencia laboral</h3>
                                         <div class="space32"></div>
                                         <div class="about-others-box" data-aos="zoom-in" data-aos-duration="900">
-                                            <p>2022-2025</p>
-                                            <br>
-                                            <h4>
-                                                <a href="https://www.banregio.com/" target="_blank">Analista Programador SR B</a>
-                                            </h4>
-                                            <p>Grupo Financiero Banregio</p>
-                                            
-                                            <div class="space32"></div>
-                                            <p>2022-2023</p>
-                                            <br>
-                                            <h4>
-                                                <a href="javascript:void(0);">Desarrollador Full Stack</a>
-                                            </h4>
-                                            <p>Horuss Solutions</p>
-                                            
-                                            <div class="space32"></div>
-                                            <p>2021-2022</p>
-                                            <br>
-                                            <h4>
-                                                <a href="javascript:void(0);">Desarrollador Full Stack</a>
-                                            </h4>
-                                            <p>Horuss Solutions</p>
-                                            
-                                            <div class="space32"></div>
-                                            <p>2019-2021</p>
-                                            <br>
-                                            <h4>
-                                                <a href="https://www.municipiocampeche.gob.mx/" target="_blank">Jefe de Departamento</a>
-                                            </h4>
-                                            <p>H. Ayuntamiento de Campeche</p>
-                                            
-                                            <div class="space32"></div>
-                                            <p>2018-2018</p>
-                                            <br>
-                                            <h4>
-                                                <a href="javascript:void(0);">Desarrollador de Software</a>
-                                            </h4>
-                                            <p>Logismic Software</p>
+                                            @for (experience of data.sections.aboutMe.workExperience; track experience.positionTitle) {
+                                                <p>{{ experience.period }}</p>
+                                                <br>
+                                                <h4>
+                                                    <a [href]="experience.url ?? 'javascript:void(0);'| appSafeUrl" [target]="experience.url ? '_blank' : ''">
+                                                        {{ experience.positionTitle }}
+                                                    </a>
+                                                </h4>
+                                                <p>{{ experience.companySchool }}</p>
+                                                <div class="space32"></div>
+                                            }
                                         </div>
                                     </div>
                                     
@@ -220,25 +150,18 @@
                                         <h3>Educación</h3>
                                         <div class="space32"></div>
                                         <div class="about-others-box" data-aos="zoom-in" data-aos-duration="1100">
-                                            <p>2025 - Actualidad</p>
-                                            <br>
-                                            <h4>
-                                                <a href="https://ieu.edu.mx/oferta-academica/maestrias/tecnologias-de-la-informacion/"
-                                                   target="_blank">
-                                                    Maestría en Tecnologías de la Información
-                                                </a>
-                                            </h4>
-                                            <p>IEU Universidad</p>
-                                            
-                                            <div class="space32"></div>
-                                            <p>2011 - 2016</p>
-                                            <br>
-                                            <h4>
-                                                <a href="https://itcampeche.edu.mx/ingenieria-en-sistemas-computacionales/" target="_blank">
-                                                    Ingeniería en Sistemas Computacionales
-                                                </a>
-                                            </h4>
-                                            <p>Instituto Tecnológico de Campeche</p>
+                                            @for (education of data.sections.aboutMe.educations; track education.positionTitle) {
+                                                <p>{{ education.period }}</p>
+                                                <br>
+                                                <h4>
+                                                    <a [href]="education.url ?? 'javascript:void(0);'| appSafeUrl"
+                                                       [target]="education.url ? '_blank' : ''">
+                                                        {{ education.positionTitle }}
+                                                    </a>
+                                                </h4>
+                                                <p>{{ education.companySchool }}</p>
+                                                <div class="space32"></div>
+                                            }
                                         </div>
                                     </div>
                                     <div class="space20"></div>
@@ -268,78 +191,19 @@
                                         </div>
                                         <div class="space80"></div>
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="900">
-                                                <div class="skill-boxarea">
-                                                    <div class="icons">
-                                                        <img src="assets/img/icons/skill1.svg" alt="">
+                                            @for (toolTechnology of data.sections.mySkills.toolsTechnologies; track toolTechnology.name) {
+                                                <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1000">
+                                                    <div class="skill-boxarea">
+                                                        <div class="icons">
+                                                            <img [src]="toolTechnology.icon" alt="">
+                                                        </div>
+                                                        <div class="space24"></div>
+                                                        <h3><span appCounter [countTo]="toolTechnology.percentage" class="counter"></span>%</h3>
+                                                        <div class="space16"></div>
+                                                        <p>{{ toolTechnology.name }}</p>
                                                     </div>
-                                                    <div class="space24"></div>
-                                                    <h3><span appCounter [countTo]="96" class="counter"></span>%</h3>
-                                                    <div class="space16"></div>
-                                                    <p>Angular</p>
                                                 </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1000">
-                                                <div class="skill-boxarea">
-                                                    <div class="icons">
-                                                        <img src="assets/img/icons/skill2.svg" alt="">
-                                                    </div>
-                                                    <div class="space24"></div>
-                                                    <h3><span appCounter [countTo]="92" class="counter"></span>%</h3>
-                                                    <div class="space16"></div>
-                                                    <p>Java</p>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1100">
-                                                <div class="skill-boxarea">
-                                                    <div class="icons">
-                                                        <img src="assets/img/icons/skill3.svg" alt="">
-                                                    </div>
-                                                    <div class="space24"></div>
-                                                    <h3><span appCounter [countTo]="90" class="counter"></span>%</h3>
-                                                    <div class="space16"></div>
-                                                    <p>Spring Boot</p>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1200">
-                                                <div class="skill-boxarea">
-                                                    <div class="icons">
-                                                        <img src="assets/img/icons/skill4.svg" alt="">
-                                                    </div>
-                                                    <div class="space24"></div>
-                                                    <h3><span appCounter [countTo]="80" class="counter"></span>%</h3>
-                                                    <div class="space16"></div>
-                                                    <p>Laravel</p>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1000">
-                                                <div class="skill-boxarea">
-                                                    <div class="icons">
-                                                        <img src="assets/img/icons/skill5.svg" alt="">
-                                                    </div>
-                                                    <div class="space24"></div>
-                                                    <h3><span class="counter" appCounter [countTo]="98"></span>%</h3>
-                                                    <div class="space16"></div>
-                                                    <p>Git</p>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out"
-                                                 data-aos-duration="11000">
-                                                <div class="skill-boxarea">
-                                                    <div class="icons">
-                                                        <img src="assets/img/icons/skill6.svg" alt="" class="Wordpress">
-                                                    </div>
-                                                    <div class="space24"></div>
-                                                    <h3><span class="counter" appCounter [countTo]="90"></span>%</h3>
-                                                    <div class="space16"></div>
-                                                    <p>PostgreSQL</p>
-                                                </div>
-                                            </div>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -352,85 +216,4 @@
             </div>
         </div>
     </div>
-</div>
-
-
-<div class="custom-model-main" [class.model-open]="isModelOpen">
-    <div class="custom-model-inner">
-        <div class="close-btn" (click)="closeModel()">×</div>
-        <div class="custom-model-wrap">
-            <div class="pop-up-content-wrap">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="opend-section">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="boxes-area">
-                                        <div class="img1">
-                                            <img src="assets/img/all-images/portfolio/portfolio-img1.png" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <div class="tags-area">
-                                                <a href="javascript:void(0);">23 April 2024</a>
-                                                <a href="javascript:void(0);">Alex Ross</a>
-                                            </div>
-                                            <a href="javascript:void(0);">Crafting Compelling Designs and Strategic Marketing: A Creative
-                                                Journey Unveiled</a>
-                                            <p>In today's fast-paced digital landscape, the intersection of design and
-                                                marketing has become increasingly vital for businesses aiming to best
-                                                captivate audiences and drive success. Crafting compelling designs.</p>
-                                            <p class="pera">Psychology and market trends. Through strategic marketing,
-                                                these an designs are brought to life, leveraging data-driven insights
-                                                innovative.</p>
-                                            <div class="btn-area1">
-                                                <a href="contact.html" class="vl-btn1">Get in touch now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-lg-5">
-                                    <div class="contact-from-area" data-aos="flip-right" data-aos-duration="1000">
-                                        <h3>Leave A Message</h3>
-                                        <form action="https://api.web3forms.com/submit" method="POST">
-                                            <input type="hidden" name="access_key"
-                                                   value="0cd32fff-eda2-4da3-be43-37d47fbb396b">
-                                            
-                                            <div class="input">
-                                                <input type="text" placeholder="Full Name">
-                                            </div>
-                                            <div class="input">
-                                                <input type="number" placeholder="Phone Number" required>
-                                            </div>
-                                            <div class="input">
-                                                <input type="email" placeholder="Email Address" required>
-                                            </div>
-                                            <div class="input">
-                                                <select name="country" id="country" class="country-area nice-select6">
-                                                    <option value="1" data-display="Service Type">Service Type</option>
-                                                    <option value="">Belgium</option>
-                                                    <option value="">Brezil</option>
-                                                    <option value="">Argentina</option>
-                                                    <option value="">Bangladesh</option>
-                                                    <option value="">Germany</option>
-                                                </select>
-                                            </div>
-                                            <div class="input">
-                                                <textarea placeholder="Message" required></textarea>
-                                            </div>
-                                            <div class="space32"></div>
-                                            <div class="btn-area text-end" data-aos="fade-up" data-aos-duration="1200">
-                                                <button type="submit" class="vl-btn1">submit now</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-overlay"></div>
 </div>
