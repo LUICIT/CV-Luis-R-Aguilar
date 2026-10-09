@@ -6,16 +6,16 @@
     "shortName": "Luis R. Aguilar",
     "fullName": "Luis Rodrigo Aguilar Uribe",
     "email": "falcon_nike3@hotmail.com",
-    "shortDescription": "Hola, soy Luis Rodrigo Aguilar Uribe, un desarrollador de software con más de 8 años de trayectoria en el diseño e implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java, Spring Boot, Laravel y VueJS, aplicando metodologías ágiles y buenas prácticas de ingeniería.",
-    "description": "Hola, soy Luis R. Aguilar, un desarrollador de software con más de 8 años de trayectoria en el diseño e implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java, Spring Boot, Laravel y VueJS, aplicando metodologías ágiles y buenas prácticas de ingeniería. Mi último puesto como Analista Programador SR B me permitió fortalecer mis habilidades en la construcción de sistemas complejos y el trabajo colaborativo con equipos multidisciplinarios. Me apasiona la tecnología, seguir aprendiendo cada día y aportar valor en equipos que buscan innovación y crecimiento. Estoy abierto a nuevos retos donde pueda compartir mi experiencia y al mismo tiempo seguir creciendo como profesional.",
+    "shortDescription": "Desarrollador Full Stack con más de siete años de experiencia en banca, gobierno y sector agrícola. Java, Spring Boot y Angular.",
+    "description": "Más de siete años de experiencia desarrollando software para banca, gobierno y sector agrícola. Mi trabajo abarca interfaces, APIs, bases de datos, pruebas y despliegues.",
     "socials": [
       {
-        "name": "facebook",
-        "url": "https://www.facebook.com/Luis.R.Aguilar.Uribe"
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/isc-luis-rodrigo-aguilar-uribe/"
       },
       {
-        "name": "linkedin",
-        "url": "https://www.linkedin.com/in/isc-luis-rodrigo-aguilar-uribe/"
+        "name": "GitHub",
+        "url": "https://github.com/LUICIT"
       }
     ],
     "assets": {
@@ -23,86 +23,123 @@
         "image": "assets/img/all-images/luis/IMG_0302.JPG"
       },
       "cv": {
-        "url": "assets/files/luis/cv_2026.pdf",
-        "fileName": "CV Luis R Aguilar.pdf"
+        "url": "assets/files/luis/cv.pdf",
+        "fileName": "CV_Luis_Rodrigo_Aguilar.pdf"
       }
     }
   },
   "sections": {
     "home": {
-      "title": "Hola, soy Luis R. Aguilar, desarrollador de software",
+      "title": "Hola, soy Luis R. Aguilar, desarrollador Full Stack",
       "subtitle": {
-        "part1": "Innovación Tecnológica",
-        "part2": "y desarrollo de",
-        "part3": "software"
+        "part1": "Desarrollo Full Stack",
+        "part2": "con Java y",
+        "part3": "Angular"
       },
-      "description": "Creando software que combina innovación, eficiencia y valor real, transformando ideas en soluciones tecnológicas que generan impacto, mejoran procesos y ofrecen experiencias más simples y efectivas."
+      "description": "Más de siete años desarrollando software para banca, gobierno y sector agrícola. Experiencia en interfaces, APIs REST, bases de datos, pruebas automatizadas y despliegues."
     },
     "aboutMe": {
       "title": "Sobre mí",
       "subtitle": {
-        "part1": "Creando experiencias",
-        "part2": "de usuario",
-        "part3": "fluidas"
+        "part1": "Mi experiencia",
+        "part2": "en desarrollo de",
+        "part3": "software"
       },
       "review": {
         "title": "Luis R. Aguilar Uribe",
-        "description": "Hola, soy Luis Rodrigo Aguilar Uribe, un desarrollador de software con más de 8 años de trayectoria en el diseño e implementación de aplicaciones web modernas. Tengo experiencia en Angular, Java, Spring Boot, Laravel y VueJS, aplicando metodologías ágiles y buenas prácticas de ingeniería. Mi último puesto como Analista Programador SR B me permitió fortalecer mis habilidades en la construcción de sistemas complejos y el trabajo colaborativo con equipos multidisciplinarios. Me apasiona la tecnología, seguir aprendiendo cada día y aportar valor en equipos que buscan innovación y crecimiento. Estoy abierto a nuevos retos donde pueda compartir mi experiencia y al mismo tiempo seguir creciendo como profesional."
+        "description": "Soy Luis Rodrigo Aguilar Uribe. Trabajo con Java, Spring Boot y Angular, y tengo experiencia adicional con Laravel y Vue.js. En Banregio desarrollé dos soluciones Angular reutilizadas en al menos 20 pantallas. En el Ayuntamiento de Campeche llevé un sistema de licencias de funcionamiento desde el diseño hasta su implementación y mantenimiento. Actualmente curso una maestría en Tecnologías de la Información. Busco oportunidades remotas en México y me interesan opciones híbridas en Villahermosa, Ciudad de México y Mérida."
       },
       "principals": [
         {
           "icon": "assets/img/icons/home2.svg",
-          "title": "Angular",
-          "description": "Desarrollo de aplicaciones web dinámicas y escalables, con énfasis en el rendimiento, la mantenibilidad y experiencias de usuario modernas."
+          "title": "Angular reutilizable",
+          "description": "Dos soluciones utilizadas en al menos 20 pantallas: un selector autocompletable con filtrado en backend y una abstracción para peticiones HTTP."
         },
         {
           "icon": "assets/img/icons/home3.svg",
-          "title": "Java, Spring Boot",
-          "description": "Creación de aplicaciones robustas y seguras con arquitectura escalable, optimizando procesos mediante servicios backend eficientes y confiables."
+          "title": "Java y Spring Boot",
+          "description": "APIs REST y microservicios con PostgreSQL. Autenticación y autorización con Spring Security, JWT y OAuth2, y procesamiento concurrente."
         },
         {
           "icon": "assets/img/icons/home4.svg",
-          "title": "Git, Control de Versiones",
-          "description": "Gestión eficiente del código a través de control de versiones, facilitando el trabajo en equipo, la trazabilidad y el desarrollo colaborativo."
+          "title": "Desarrollo e implementación",
+          "description": "Diseño, desarrollo, implementación y mantenimiento de un sistema de licencias de funcionamiento con Laravel y Vue.js 2."
         },
         {
           "icon": "assets/img/icons/home5.svg",
-          "title": "SCRUM",
-          "description": "Aplicación de metodologías ágiles para gestionar proyectos de software, fomentando la colaboración, la adaptabilidad y la entrega continua de valor."
+          "title": "Pruebas y entrega",
+          "description": "Pruebas unitarias y de integración con JUnit y Mockito, análisis con SonarQube y participación en despliegues en OpenShift."
         }
       ],
       "workExperience": [
         {
-          "period": "Jul 2022 - Ago 2025",
-          "url": "https://www.banregio.com/",
+          "period": "Jul 2022 — Ago 2025",
           "positionTitle": "Analista Programador SR B",
-          "companySchool": "Grupo Financiero Banregio"
+          "companySchool": "Banregio",
+          "details": [
+            "Desarrollé funcionalidades para la gestión de recursos humanos, desde el ingreso del personal hasta su asignación a células de trabajo.",
+            "Diseñé pantallas de evaluación en Angular y soluciones reutilizables utilizadas en al menos 20 pantallas.",
+            "Desarrollé APIs y microservicios con Java y Spring Boot sobre PostgreSQL, con seguridad y documentación de APIs.",
+            "Implementé concurrencia con ExecutorService y CompletableFuture, y pruebas con JUnit y Mockito.",
+            "Trabajé con micro frontends y Module Federation y participé en despliegues en OpenShift."
+          ],
+          "progression": [
+            {
+              "role": "Analista Programador SR B",
+              "period": "Mar 2024 — Ago 2025"
+            },
+            {
+              "role": "Analista Programador SR",
+              "period": "Ene 2024 — Mar 2024"
+            },
+            {
+              "role": "Desarrollador Backend JR B",
+              "period": "Feb 2023 — Ene 2024"
+            },
+            {
+              "role": "Desarrollador Backend",
+              "period": "Jul 2022 — Feb 2023"
+            }
+          ],
+          "url": "https://www.banregio.com/"
         },
         {
-          "period": "Jul 2022 - Feb 2023",
+          "period": "Oct 2021 — Feb 2023",
           "positionTitle": "Desarrollador Full Stack",
-          "companySchool": "Horuss Solutions"
+          "companySchool": "Horuss Solutions",
+          "details": [
+            "Automaticé pipelines de integración y entrega continuas con Jenkins.",
+            "Desarrollé APIs REST con Laravel y Eloquent ORM, y aplicaciones web con Angular y Vue.js.",
+            "Implementé autenticación con JWT y OAuth2 y pruebas con PHPUnit, Jest y Karma."
+          ],
+          "progression": [],
+          "note": "Medio tiempo durante el periodo simultáneo con Banregio: julio de 2022 a febrero de 2023."
         },
         {
-          "period": "Oct 2021 - Feb 2022",
-          "positionTitle": "Desarrollador Full Stack",
-          "companySchool": "Horuss Solutions"
-        },
-        {
-          "period": "Feb 2019 - Sep 2021",
+          "period": "Feb 2019 — Sep 2021",
           "positionTitle": "Jefe de Departamento",
-          "url": "https://www.municipiocampeche.gob.mx/",
-          "companySchool": "H. Ayuntamiento de Campeche"
+          "companySchool": "H. Ayuntamiento de Campeche",
+          "details": [
+            "Llevé el sistema de licencias de funcionamiento desde su diseño y desarrollo hasta la implementación.",
+            "Realicé el mantenimiento del sistema después de su puesta en operación."
+          ],
+          "progression": [],
+          "url": "https://www.municipiocampeche.gob.mx/"
         },
         {
-          "period": "Mar 2018 - Dic 2018",
-          "positionTitle": "Desarrollador de Software",
-          "companySchool": "Logismic Software"
+          "period": "Mar 2018 — Dic 2018",
+          "positionTitle": "Desarrollador de software",
+          "companySchool": "Logismic Software",
+          "details": [
+            "Desarrollé funcionalidades, mantuve el software y corregí defectos en aplicaciones para el sector agrícola.",
+            "Implementé control de acceso mediante roles y permisos (RBAC)."
+          ],
+          "progression": []
         }
       ],
       "educations": [
         {
-          "period": "Sep 2025 - Actualidad",
+          "period": "Sep 2025 — En curso",
           "positionTitle": "Maestría en Tecnologías de la Información",
           "url": "https://ieu.edu.mx/oferta-academica/maestrias/tecnologias-de-la-informacion/",
           "companySchool": "IEU Universidad"
@@ -110,48 +147,55 @@
         {
           "period": "Ago 2011 - Dic 2016",
           "positionTitle": "Ingeniería en Sistemas Computacionales",
-            "url": "https://itcampeche.edu.mx/ingenieria-en-sistemas-computacionales/",
+          "url": "https://itcampeche.edu.mx/ingenieria-en-sistemas-computacionales/",
           "companySchool": "Instituto Tecnológico de Campeche"
         }
-      ]
+      ],
+      "courses": [
+        "Scrum Fundamentals Certified — Vabro.ai y VMEdu.com, 2025",
+        "Angular Avanzado — LinkedIn, 2025",
+        "Desarrollo con IA — BIG school, 2025",
+        "Prevención de Lavado de Dinero y Financiamiento al Terrorismo, Reforzamiento 7.1 — Asociación de Bancos de México, 2025"
+      ],
+      "languages": "Español nativo. Inglés básico: lectura y escritura, con conversación limitada."
     },
     "mySkills": {
       "title": "Mis Habilidades",
       "subtitle": {
-        "part1": "Las herramientas detrás de un",
-        "part2": "desarrollo",
-        "part3": "excepcional"
+        "part1": "Tecnologías que utilizo",
+        "part2": "en mis",
+        "part3": "proyectos"
       },
       "toolsTechnologies": [
         {
           "icon": "assets/img/icons/skill1.svg",
           "name": "Angular",
-          "percentage": 96
+          "description": "Componentes reutilizables y micro frontends"
         },
         {
           "icon": "assets/img/icons/skill2.svg",
           "name": "Java",
-          "percentage": 92
+          "description": "APIs y procesamiento concurrente"
         },
         {
           "icon": "assets/img/icons/skill3.svg",
           "name": "Spring Boot",
-          "percentage": 90
+          "description": "Seguridad, persistencia y microservicios"
         },
         {
           "icon": "assets/img/icons/skill4.svg",
           "name": "Laravel",
-          "percentage": 80
+          "description": "APIs REST con Eloquent ORM"
         },
         {
           "icon": "assets/img/icons/skill5.svg",
           "name": "Git",
-          "percentage": 98
+          "description": "Control de versiones y GitFlow"
         },
         {
           "icon": "assets/img/icons/skill6.svg",
           "name": "PostgreSQL",
-          "percentage": 90
+          "description": "Bases de datos relacionales"
         }
       ]
     }
