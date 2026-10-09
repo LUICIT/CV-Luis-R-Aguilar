@@ -25,7 +25,7 @@
                         </a>
                     </div>
                     <div class="img1 image-anime reveal" appGsapReveal>
-                        <img [src]="data.generalInfo.assets.profile.image" alt="">
+                        <img [src]="data.generalInfo.assets.profile.image" alt="Luis Rodrigo Aguilar Uribe">
                     </div>
                     <div class="space18"></div>
                     <h3>{{ data.generalInfo.shortName }}</h3>
@@ -36,19 +36,19 @@
                     <div class="space32"></div>
                     <ul>
                         <li>
-                            <a [href]="data.generalInfo.socials[0].url">
-                                <img src="assets/img/icons/s-icon3.svg" alt="">
+                            <a [href]="data.generalInfo.socials[0].url" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a [href]="data.generalInfo.socials[1].url">
-                                <img src="assets/img/icons/s-icon4.svg" alt="">
+                            <a [href]="data.generalInfo.socials[1].url" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
                     <div class="space44"></div>
                     <div class="btn-area1 text-center">
-                        <a [href]="data.generalInfo.assets.cv.url" download class="vl-btn1">Descargar CV
+                        <a [href]="data.generalInfo.assets.cv.url" [download]="data.generalInfo.assets.cv.fileName" class="vl-btn1">Descargar CV
                             <img src="assets/img/icons/download1.svg" alt="">
                         </a>
                     </div>
@@ -110,7 +110,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    
+
                                     @for (principal of data.sections.aboutMe.principals; track principal.title) {
                                         <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="900">
                                                 <div class="about-boxes2">
@@ -125,14 +125,14 @@
                                                 </div>
                                         </div>
                                     }
-                                    
-                                    <div class="soace20"></div>
-                                    
+
+                                    <div class="space20"></div>
+
                                     <div class="col-lg-6 col-md-6">
                                         <h3>Experiencia laboral</h3>
                                         <div class="space32"></div>
                                         <div class="about-others-box" data-aos="zoom-in" data-aos-duration="900">
-                                            @for (experience of data.sections.aboutMe.workExperience; track experience.positionTitle) {
+                                            @for (experience of data.sections.aboutMe.workExperience; track experience.companySchool) {
                                                 <p>{{ experience.period }}</p>
                                                 <br>
                                                 <h4>
@@ -141,11 +141,23 @@
                                                     </a>
                                                 </h4>
                                                 <p>{{ experience.companySchool }}</p>
+                                                @if (experience.note) { <p class="cv-note">{{ experience.note }}</p> }
+                                                @if (experience.details) {
+                                                    <ul class="cv-experience-details">
+                                                        @for (detail of experience.details; track detail) { <li>{{ detail }}</li> }
+                                                    </ul>
+                                                }
+                                                @if (experience.progression?.length) {
+                                                    <details class="cv-progression">
+                                                        <summary>Progresión de puestos</summary>
+                                                        @for (step of experience.progression; track step.role) { <div class="cv-position"><strong>{{ step.role }}</strong><span>{{ step.period }}</span></div> }
+                                                    </details>
+                                                }
                                                 <div class="space32"></div>
                                             }
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-lg-6 col-md-6">
                                         <h3>Educación</h3>
                                         <div class="space32"></div>
@@ -162,6 +174,12 @@
                                                 <p>{{ education.companySchool }}</p>
                                                 <div class="space32"></div>
                                             }
+                                            <details class="cv-progression">
+                                                <summary>Certificaciones y cursos</summary>
+                                                @for (course of data.sections.aboutMe.courses; track course) { <p>{{ course }}</p> }
+                                            </details>
+                                            <div class="space24"></div>
+                                            <p>{{ data.sections.aboutMe.languages }}</p>
                                         </div>
                                     </div>
                                     <div class="space20"></div>
@@ -170,7 +188,7 @@
                         </div>
                         <!--===== ABOUT AREA ENDS =======-->
                     </div>
-                    
+
                     <div id="list-item-3">
                         <!--===== SKILL AREA STARTS =======-->
                         <div class="skill-section-area">
@@ -182,11 +200,11 @@
                                                 src="assets/img/icons/sublogo1.svg" alt="">Mis Habilidades</h5>
                                             <div class="space24"></div>
                                             <h2 data-aos="fade-left" data-aos-duration="1000">
-                                                Las herramientas detrás de un
+                                                {{ data.sections.mySkills.subtitle.part1 }}
                                             </h2>
                                             <div class="space24"></div>
                                             <h2 class="head" data-aos="fade-left" data-aos-duration="1100">
-                                                desarrollo <span>excepcional</span>
+                                                {{ data.sections.mySkills.subtitle.part2 }} <span>{{ data.sections.mySkills.subtitle.part3 }}</span>
                                             </h2>
                                         </div>
                                         <div class="space80"></div>
@@ -198,9 +216,9 @@
                                                             <img [src]="toolTechnology.icon" alt="">
                                                         </div>
                                                         <div class="space24"></div>
-                                                        <h3><span appCounter [countTo]="toolTechnology.percentage" class="counter"></span>%</h3>
+                                                        <h3 class="cv-skill-title">{{ toolTechnology.name }}</h3>
                                                         <div class="space16"></div>
-                                                        <p>{{ toolTechnology.name }}</p>
+                                                        <p class="cv-skill-description">{{ toolTechnology.description }}</p>
                                                     </div>
                                                 </div>
                                             }
@@ -211,7 +229,7 @@
                         </div>
                         <!--===== SKILL AREA ENDS =======-->
                     </div>
-                
+
                 </div>
             </div>
         </div>

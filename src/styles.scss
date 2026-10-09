@@ -7,3 +7,28 @@
 @use "../public/assets/css/plugins/slick-slider.css";
 @use "../public/assets/css/plugins/nice-select.css";
 @use "../public/assets/scss/main.scss";
+
+/* CV detail within the existing theme. */
+.about-others-box ul.cv-experience-details { display: block; padding-left: 20px; margin: 18px 0; text-align: left; color: #fff; list-style: disc outside; }
+.main-hero-area2 .about-section-area .about-boxarea .about-others-box ul.cv-experience-details > li { display: list-item; font-size: 14px; line-height: 1.65; margin-bottom: 12px; color: #fff; text-align: left; }
+.cv-note { margin-top: 16px; font-size: 13px !important; }
+.cv-progression { margin-top: 20px; }
+.cv-progression summary { cursor: pointer; font-size: 14px; color: #ffb400; }
+.cv-progression p { margin-top: 14px; font-size: 13px !important; }
+.skill-boxarea h3.cv-skill-title { font-size: 26px; }
+.skill-boxarea p.cv-skill-description { font-size: 14px; line-height: 1.5; }
+
+.personal-contact-box ul li a i { color: var(--ztc-text-text-1); font-size: 22px; vertical-align: middle; }
+.personal-contact-box ul li a:hover i { color: #000; }
+/* Keep offscreen reveal animations from widening the mobile page. */
+.main-hero-area2 { overflow-x: clip; }
+
+.about-others-box .cv-progression { text-align: left; }
+.about-others-box .cv-position { display: block; margin-top: 18px; color: #fff; }
+.about-others-box .cv-position strong,
+.about-others-box .cv-position span { display: block; font-size: 13px; line-height: 1.65; }
+.body1 .header-area .header-elements .site-logo img.cv-name-logo { width: 280px; height: auto; }
+.sidebar-logo img.cv-name-logo { width: 260px; height: auto; }
+@media (max-width: 767px) { .body1 .header-area .header-elements .site-logo img.cv-name-logo { width: 240px; } }
+.header-elements .site-logo { width: 280px; flex-shrink: 0; }
+@media (max-width: 767px) { .header-elements .site-logo { width: 240px; } }

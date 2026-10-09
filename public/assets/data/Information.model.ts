@@ -23,7 +23,7 @@ interface MySkillsModel {
 interface ToolsTechnologiesModel {
     icon: string;
     name: string;
-    percentage: number;
+    description: string;
 }
 
 interface HomeModel {
@@ -45,6 +45,8 @@ interface AboutMeModel {
     principals: PrincipalModel[];
     workExperience: TimeLineModel[];
     educations: TimeLineModel[];
+    courses: string[];
+    languages: string;
 }
 
 interface ReviewModel {
@@ -63,6 +65,9 @@ interface TimeLineModel {
     url?: string;
     positionTitle: string;
     companySchool: string;
+    note?: string;
+    details?: string[];
+    progression?: { role: string; period: string }[];
 }
 
 interface GeneralInfoModel {

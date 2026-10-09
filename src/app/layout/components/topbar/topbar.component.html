@@ -3,7 +3,7 @@
         <div class="sidebar-info">
             <div class="sidebar-logo">
                 <a href="/">
-                    <img src="assets/img/logo/logo2.png" alt="logo">
+                    <img class="cv-name-logo" src="assets/img/logo/luis-r-aguilar.svg" alt="Luis R. Aguilar">
                 </a>
                 <div class="close-mobile-menu" (click)="closeSidebar()">
                     <a><i class="fa-solid fa-xmark"></i></a>
@@ -35,7 +35,7 @@
             <div class="space16"></div>
             <div class="btn-area">
                 <a [href]="'mailto:' + data.generalInfo.email" class="vl-btn1">
-                    Contactame
+                    Contáctame
                     <img src="assets/img/icons/mail1.svg" alt="">
                 </a>
             </div>
@@ -45,10 +45,10 @@
                 <ul>
                     <li>
                         <a [href]="data.generalInfo.socials[0].url">
-                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                         <a [href]="data.generalInfo.socials[1].url">
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
                 </ul>
@@ -63,26 +63,16 @@
                 <div class="col-lg-12">
                     <div class="header-elements">
                         <div class="site-logo">
-                            <a routerLink="/"><img src="assets/img/logo/logo1.png" alt=""></a>
+                            <a routerLink="/"><img class="cv-name-logo" src="assets/img/logo/luis-r-aguilar.svg" alt="Luis R. Aguilar"></a>
                         </div>
                         <div class="btn-area d-lg-flex">
-                            <div class="theme-toggle-container">
-                                <label class="theme-switch">
-                                    <input type="checkbox" [checked]="isLightMode" (change)="toggleTheme($event)"
-                                           id="theme-toggle">
-                                    <span class="slider">
-                                        <i class="fas fa-moon icon moon-icon"></i>
-                                        <i class="fas fa-sun icon sun-icon"></i>
-                                    </span>
-                                </label>
-                            </div>
                             <a [href]="'mailto:' + data.generalInfo.email" class="vl-btn1">
-                                Contactame
+                                Contáctame
                                 <span>
                                     <img src="assets/img/icons/mail1.svg" alt="">
                                 </span>
                             </a>
-                            <button (click)="toggleSidebar()" class="hamburger_menu"><img src="assets/img/icons/bars-icons1.svg" alt="">
+                            <button aria-label="Abrir menú" (click)="toggleSidebar()" class="hamburger_menu"><img src="assets/img/icons/bars-icons1.svg" alt="">
                             </button>
                         </div>
                     </div>

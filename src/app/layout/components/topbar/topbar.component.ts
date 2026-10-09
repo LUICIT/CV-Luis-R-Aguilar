@@ -14,7 +14,6 @@ import { InformationModel } from '../../../../../public/assets/data/Information.
 })
 export class TopbarComponent implements OnInit {
 
-    isLightMode: boolean = false; // Tracks the current theme mode
     isSidebarVisible: boolean = false;
     isOverlayActive: boolean = false;
     currentSection = 'list-item-1';
@@ -27,24 +26,8 @@ export class TopbarComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        // Check the saved theme in localStorage and initialize the theme
-        const savedTheme = localStorage.getItem('theme');
-        this.isLightMode = savedTheme === 'light';
-        this.updateBodyClass(); // Apply the saved theme on page load
-    }
-
-    toggleTheme(event: Event) {
-        this.isLightMode = (event.target as HTMLInputElement).checked;
-        localStorage.setItem('theme', this.isLightMode ? 'light' : 'dark');
-        this.updateBodyClass();
-    }
-
-    updateBodyClass() {
-        if (this.isLightMode) {
-            document.body.classList.add('light-mode');
-        } else {
-            document.body.classList.remove('light-mode');
-        }
+        // Dark mode is fixed, including for visitors with a saved light theme.
+        this.renderer.removeClass(document.body, 'light-mode');
     }
 
     setActiveLink(link: string): void {

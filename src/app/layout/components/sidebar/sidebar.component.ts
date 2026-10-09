@@ -4,7 +4,7 @@ import { GsapRevealDirective } from '../../../directives/gsap-reveal.directive';
 import { CommonModule } from '@angular/common';
 import { ClassManagerService } from '../../../services/classmanaer.service';
 import { ScrollToModule, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
-import { CounterDirective } from '../../../directives/counter.directive';
+
 import * as data from '../../../../../public/assets/data/information.json';
 import { InformationModel } from '../../../../../public/assets/data/Information.model';
 import { SafeUrlPipe } from '../../../pipes/safe-url.pipe';
@@ -13,7 +13,6 @@ import { SafeUrlPipe } from '../../../pipes/safe-url.pipe';
     selector: 'app-sidebar',
     imports: [
         GsapRevealDirective,
-        CounterDirective,
         CommonModule,
         RouterOutlet,
         ScrollToModule,
