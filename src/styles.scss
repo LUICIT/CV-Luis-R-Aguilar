@@ -32,3 +32,10 @@
 @media (max-width: 767px) { .body1 .header-area .header-elements .site-logo img.cv-name-logo { width: 240px; } }
 .header-elements .site-logo { width: 280px; flex-shrink: 0; }
 @media (max-width: 767px) { .header-elements .site-logo { width: 240px; } }
+
+@media (min-width: 992px) {
+    .main-hero-area2 .hero-heading-area > p {
+        padding-left: 0;
+        text-align: left;
+    }
+}
